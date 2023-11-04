@@ -1,0 +1,49 @@
+.movie-header ul li {
+    margin-left: 45px;
+}
+
+ i {
+    font-size: 25px;
+}
+
+/* swiper style */
+.mySwiper {
+    border: solid 2px transparent;
+    width: 600px;
+}
+
+.swiper {
+    display: grid;
+    place-content: center;
+    margin-left: 300px;
+}
+
+
+
+.swiper img {
+    width: 600px;
+    height: 210px;
+    border-radius: 5px;
+    margin: 10px 0 5px 0;
+}
+
+/* movie list style */
+
+.movie-lists {
+    width: 140px;
+    margin-top: 5px;
+}
+
+.movie-lists img {
+    border-radius: 5px;
+    height: 200px;
+}
+
+.movie-name i {
+    font-size: 11px;
+}
+
+.rating em {
+    font-size: 12px;
+    margin-left: 2px;
+}

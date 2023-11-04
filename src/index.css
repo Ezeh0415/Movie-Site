@@ -1,0 +1,188 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+:root{
+  --color-gold:gold;
+  --color-state-blue:#6a5acd;
+  --color-light:#fff;
+  --color-dark:#040406;
+
+  --background:var(--color-light);
+  --foreground:var(--color-dark);
+}
+
+[data-theme = "dark"] {
+  --color-gold:gold;
+  --color-state-blue:#6a5acd;
+  --color-light:#fff;
+  --color-dark:#040406;
+
+  --background:var(--color-dark);
+  --foreground:var(--color-light);
+}
+
+/* utility classes */
+
+.--flex {
+  display: flex;
+}
+
+.--flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.--flex-around {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.--flex-evenly {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.--flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.--flex-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.--flex-start {
+  display: flex;
+  justify-content:start;
+  align-items: center;
+}
+
+.--flex-end {
+  display: flex;
+  justify-content:end;
+  align-items: center;
+}
+
+.--grid-center {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.--container {
+  padding: 0.7rem;
+  margin: 0.7rem;
+}
+
+.--cap {
+  text-transform: capitalize;
+  text-decoration: none;
+}
+
+.--text-center {
+  text-align: center;
+}
+
+li {
+  list-style-type: none;
+}
+/* margin section top */
+.--mt-2 {
+  margin-top: 2px;
+}
+
+.--mt-5 {
+  margin-top: 5px;
+}
+.--mt-10 {
+  margin-top: 10px;
+}
+.--mt-15 {
+  margin-top: 15px;
+}
+.--mt-20 {
+  margin-top: 20px;
+}
+.--mt-25 {
+  margin-top: 25px;
+}
+.--mt-30 {
+  margin-top: 30px;
+}
+.--mt-35 {
+  margin-top: 35px;
+}
+.--mt-40 {
+  margin-top: 40px;
+}
+.--mt-45 {
+  margin-top: 45px;
+}
+.--mt-50 {
+  margin-top: 50px;
+}
+.--mt-55 {
+  margin-top: 55px;
+}
+.--mt-60 {
+  margin-top: 60px;
+}
+.--mt-65 {
+  margin-top: 65px;
+}
+.--mt-70 {
+  margin-top: 70px;
+}
+.--mt-75 {
+  margin-top: 75px;
+}
+.--mt-80 {
+  margin-top: 80px;
+}
+.--mt-85 {
+  margin-top: 85px;
+}
+.--mt-90 {
+  margin-top: 90px;
+}
+.--mt-95 {
+  margin-top: 95px;
+}
+.--mt-100 {
+  margin-top: 100px;
+}
+
+/* show and hide utility */
+
+.--show {
+  display: block;
+}
+
+.--hide {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--foreground);
+}

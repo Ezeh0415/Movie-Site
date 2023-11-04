@@ -1,0 +1,18 @@
+.box {
+    justify-content: space-between;
+    padding: 2px;
+}
+
+.main {
+    margin-left: 10px;
+}
+
+.side {
+    background-color: var(--color-state-blue);
+    border: solid 1px ;
+    border-radius: 10px;
+    width: 37%;
+    margin-left: 2px;
+    padding: 5px;
+    overflow: hidden;
+}

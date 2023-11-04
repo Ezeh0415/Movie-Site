@@ -1,0 +1,17 @@
+.user h3{
+    color: var(--color-light);
+}
+
+.input-section input {
+    width: 85%;
+    padding: 8px;
+    border: none;
+    border-radius: 10px;
+}
+
+/* search section styles */
+
+.search-section h2 {
+    text-transform: capitalize;
+    color: var(--color-light);
+}
