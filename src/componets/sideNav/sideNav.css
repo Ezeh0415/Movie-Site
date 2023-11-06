@@ -16,3 +16,7 @@
     text-transform: capitalize;
     color: var(--color-light);
 }
+
+.output {
+    margin-bottom: 10px;
+}

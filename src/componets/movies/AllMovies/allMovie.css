@@ -1,0 +1,48 @@
+.all-movie {
+    width: 90vh;
+    padding: 10px;
+    margin-top: 15px;
+}
+
+.allMovies-grid {
+    margin-top: -25px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.movie-lists img {
+    height: 180px;
+}
+
+.movie-name b {
+    font-size: 10px;
+}
+
+.rating em {
+    font-size: 10px;
+}
+
+.movie-lists {
+    margin-top: 15px;
+}
+
+nav {
+    border: solid transparent;
+    width: 150px;
+    height: 30px;
+    display: flex;
+    margin: 0 auto;
+}
+
+/* nav ul {
+    display: flex;
+} */
+
+ul ,li, a{
+    display: flex;
+    position: relative;
+}
+
+ul li {
+    margin-left: 10px;
+}

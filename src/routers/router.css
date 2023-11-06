@@ -15,9 +15,15 @@
 .side {
     background-color: var(--color-state-blue);
     border: solid 1px ;
+    border-color: var(--background);
     border-radius: 10px;
     width: 37%;
     margin-left: 2px;
     padding: 5px;
-    overflow: hidden;
+    overflow:scroll;
+    height: 620px;
+}
+
+.side::-webkit-scrollbar {
+    display: none;
 }

@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
     const useFetch = (url) => {
 
         const [data, setData] = useState(null)
+        const [search,setSearch] = useState(null)
         const [isPending, setIsPending] = useState(true);
         const [error, setError] = useState(null)
     
@@ -18,6 +19,7 @@ import { useEffect, useState } from "react";
                 })
                 .then(data => {
                 setData(data.data.movies);
+                setSearch(data)
                 setIsPending(false);
                 setError(null);
                 })
@@ -32,7 +34,7 @@ import { useEffect, useState } from "react";
     
           }, [url]);
     
-          return {data ,isPending, error};
+          return {data ,isPending, error, search};
     }
     
     export default useFetch;

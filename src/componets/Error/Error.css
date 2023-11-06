@@ -1,0 +1,9 @@
+.error-section {
+  display: grid;
+  place-content: center;
+}
+.error-section img {
+    width: 80%;
+    /* background-image: url('../../Images/Screenshot_20231106_204609_Opera\ Mini.jpg');
+    background-size: cover; */
+}

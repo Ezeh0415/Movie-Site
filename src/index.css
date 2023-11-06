@@ -87,6 +87,12 @@ code {
   align-items: center;
 }
 
+.--grid-column {
+  margin-top: -25px;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+}
+
 
 
 .--container {

@@ -2,6 +2,10 @@
     margin-left: 45px;
 }
 
+.head-icon {
+    color: var(--color-state-blue);
+}
+
  i {
     font-size: 25px;
 }
