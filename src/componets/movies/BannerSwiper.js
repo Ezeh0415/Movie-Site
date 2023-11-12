@@ -6,7 +6,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 
 const BannerSwiper = () => {
-    const { data } = useContext(contextProp)
+    const { data , isNavOpen } = useContext(contextProp)
     const swipe = data.slice(0,6)
 
     // distructureing
@@ -18,7 +18,7 @@ const BannerSwiper = () => {
   return (
     <div className="bannerSwiper">
         <i><b>Recomended</b> for you</i>
-         <div className="swiper">   
+         <div className={isNavOpen ? "swiper-off" : "swiper"}>   
                 <Swiper className="mySwiper">
                     <SwiperSlide><img src={one} alt="movie-pic" /></SwiperSlide>
                     <SwiperSlide><img src={two} alt="movie-pic" /></SwiperSlide>

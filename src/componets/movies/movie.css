@@ -198,6 +198,10 @@
     margin-left: 10px;
 }
 
+.swiper-off {
+   visibility: hidden;
+}
+
 
 
 .swiper img {
