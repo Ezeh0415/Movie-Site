@@ -14,7 +14,7 @@ import Error from '../componets/Error/Error'
 import MovieDetails from '../componets/movies/movieDetails/MovieDetails'
 
 const Routers = () => {
-  const { darkMood,data,isPending,error } = useContext(contextProp)
+  const { darkMood,data,isPending,error,isNavOpen, } = useContext(contextProp)
   return (
     <div  className="back-ground" data-theme={darkMood}>
           <BrowserRouter>
@@ -42,7 +42,16 @@ const Routers = () => {
                       </div>
                       {data && (
                           <div className='side'>
-                              <SideNav />
+                                  <div className="desktopNav">
+                                      <SideNav /> 
+                                  </div>
+                          </div>
+                      )}
+                      {data && (
+                          <div className={isNavOpen ? "mobile-side" : "mobile-side-off"}>
+                                  <div className="mobileNav">
+                                      <SideNav /> 
+                                  </div>
                           </div>
                       )}
                     </div>

@@ -2,6 +2,7 @@ import React, { useContext, useState } from 'react'
 import "./allMovie.css";
 import { contextProp } from '../../../useContext/useContext';
 import { GiFallingStar } from 'react-icons/gi'
+import {Link} from "react-router-dom"
 import { FaArrowAltCircleLeft, FaArrowAltCircleRight } from 'react-icons/fa';
 
 const AllMovies = () => {
@@ -47,19 +48,20 @@ function nextPage() {
                 const [t1,t2,t3] = genres
                 return (
                     <div key={movies.id}>
-                        <div className='movie-lists'>
-                            <img src={medium_cover_image} alt="" />
-                            <div className='movie-name'>
-                                    <i><b>{title}</b></i>
-                                    <i><GiFallingStar />{rating}</i>
-                            </div>
-                            <div className='rating'>
-                                <em>{t1}</em>
-                                <em>{t2}</em>
-                                {/* <em>{t3}</em> */}
-                            </div>
-                        </div>
-                    </div>
+                            <Link to={`/allMovie/${movies.id}`}>
+
+                                    <div className='movie-lists'>
+                                        <img src={medium_cover_image} alt="" />
+                                        <div className='movie-name'>
+                                                <i><b>{title}</b></i>
+                                                <i><GiFallingStar />{rating}</i>
+                                        </div>
+                                        <div className='rating'>
+                                           <em> {t1},{t2},{t3} </em>
+                                        </div>
+                                    </div>
+                            </Link>
+                          </div>
                 )
             })}
         </div>

@@ -2,6 +2,8 @@ import { createContext ,useState,useEffect } from "react";
 import useFetch from "../useFetch/useFetch"
 import useLocalStorage from 'use-local-storage';
 import {useParams} from "react-router-dom"
+import {useSelector,useDispatch} from "react-redux"
+import { NAVHANDLE } from "../store/navSlice/NavSlice";
 
 export const contextProp = createContext()
 
@@ -56,6 +58,11 @@ const onSearch = (e) => {
         setQuery(e.target.value)
 }
 
+// MOBILE NAV BAR SECTION 
+
+const isNavOpen = useSelector((state) => state.navSlice.isNavOpen)
+const dispatch = useDispatch()
+
 
 
     return(
@@ -76,6 +83,10 @@ const onSearch = (e) => {
                     handleSearch,
                     onSearch,
 
+                    dispatch,
+                    isNavOpen,
+                    NAVHANDLE,
+                    
                     }}>
                     {children}
                 </contextProp.Provider>

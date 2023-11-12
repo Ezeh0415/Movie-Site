@@ -1,11 +1,12 @@
 .all-movie {
-    width: 90vh;
+    width: 92vh;
     padding: 10px;
-    margin-top: 15px;
+    /* margin-top: 15px; */
+    margin:0 0 0 18px ;
 }
 
 .allMovies-grid {
-    margin-top: -25px;
+    margin-top: -20px;
     display: grid;
     grid-template-columns: repeat(3,1fr);
 }
@@ -45,4 +46,115 @@ ul ,li, a{
 
 ul li {
     margin-left: 10px;
+}
+
+@media screen   and (min-width:500px)  and (max-width:950px) {
+
+    .all-movie {
+        width: 100%;
+        padding: 2px;
+        /* margin-top: 15px; */
+        margin:0 0 0 1px ;
+    }
+
+    .allMovies-grid {
+        margin: 10px 0 0 0;
+        width: 95%;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .movie-lists img {
+        width: 95%;
+        height: 300px;
+    }
+
+    .movie-lists {
+        margin-top: 15px;
+    }
+
+    .rating em {
+        font-size: 25px;
+    }
+
+    /* pagnation section */
+
+    nav {
+        border: solid transparent;
+        width: 150px;
+        height: 30px;
+        display: flex;
+        margin: 0 auto;
+    }
+
+    ul {
+        margin-left: -70px;
+        margin-top: 40px;
+    }
+
+    ul li {
+        margin-left: 10px;
+        font-size: 30px;
+        color: var(--color-state-blue);
+    }
+    
+    ul ,li, a{
+        display: flex;
+        position: relative;
+        color: var(--foreground);
+    }
+
+    
+}
+
+@media screen and (max-width:489px) {
+    .all-movie {
+        width: 100%;
+        padding: 2px;
+        /* margin-top: 15px; */
+        margin:0 0 0 1px ;
+    }
+
+    .allMovies-grid {
+        margin: 10px 0 0 0;
+        width: 95%;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .movie-lists img {
+        width: 95%;
+        height: 300px;
+    }
+
+    .movie-lists {
+        margin-top: 15px;
+    }
+
+        /* pagnation section */
+
+        nav {
+            border: solid transparent;
+            width: 150px;
+            height: 30px;
+            display: flex;
+            margin: 0 auto;
+        }
+
+        ul {
+            margin-left: -67px;
+            margin-top: 20px;
+        }
+
+        ul li {
+            margin-left: 10px;
+            font-size: 30px;
+            color: var(--color-state-blue);
+        }
+        
+        ul ,li, a{
+            display: flex;
+            position: relative;
+            color: var(--foreground);
+        }
 }

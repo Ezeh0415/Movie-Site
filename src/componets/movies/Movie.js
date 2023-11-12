@@ -6,7 +6,7 @@ import {
 
 const Movie = () => {
   return (
-    <div>
+    <div className='text-header'>
         <div className='--flex-between'>
            <i><b>Most Popular</b></i>
            <Link to="/allMovie"> View All</Link>
